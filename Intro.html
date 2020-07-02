@@ -3,60 +3,90 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Portfolio</title>
+	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@900&display=swap" rel="stylesheet">
 	</head>
     <style>
-    	.flip-box{
-    		perspective: 1000px;
-    		display: block;
-			margin-left: auto;
-			margin-right: auto;
-			width: 300px;
-            height: 300px;
-			margin-top: 200px;
-    	}
-    	img{
 
-			height:300px;
-    	}
+    *{
+		box-sizing: border-box;
+		margin: 0;
+	}	
+   
+   .box1{
+   	width: 280px;
+   	height: 120px;
+   	background-color: black;
+   	position: relative; 
+   	z-index: 2;
+   	border: 10px solid white;
+    line-height: 120px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 100px;
+	text-decoration: none;
+	color: white;
+    font-family: 'Roboto', sans-serif;
+    font-size: 35px;
+    padding-left: 20px;
+   }
 
-		.logo{
-			height:300px;
-		}
+   a{
+   	text-decoration: none;
+	color: white;
+    font-family: 'Roboto', sans-serif;
+    font-size: 35px;
+    padding-left: 20px;
+    line-height: 120px;
+   }
 
-		.flip{
-			position: relative;
-			line-height: 400px;
-			transform-style: preserve-3d;
-			transform: rotateY(0deg);
-			transition: .5s;
-		}
+   .box2{
+   	width: 120px;
+   	height: 120px;
+   	border: 10px solid white;
+   	background-color: black;
+   	position: relative; 
+    left:110px; 
+    top: -90px; 
+    z-index: 1;
+    margin-left: auto;
+	margin-right: auto;
+   }
 
-		.flip-box:hover .flip{
-			transform: rotateY(-180deg);
-		}
+   .box1:hover{
+    background-color: white;
+   }
 
-		.logo, .logo2{
-			position: absolute;
-			backface-visibility: hidden;
-		}
+   a:hover{
+   	color: black;
+   }
 
-		.logo2{
-			height:300px;
-			transform: rotateY(180deg);
-		}
 
+   p{
+   	text-decoration: none;
+	color: white;
+    font-family: 'Roboto', sans-serif;
+    font-size: 70px;
+    text-align: center;
+    margin-top: 80px;
+   }
+
+   h1{
+   	text-decoration: none;
+	color: white;
+    font-family: 'Roboto', sans-serif;
+    font-size: 70px;
+    text-align: center;
+    margin-bottom: : 80px;
+   }
 
 	</style>
 
 
-	<body bgcolor="#F4DFDF">
-
-	<div class = "flip-box">
-		<div class ="flip">
-		<div class="logo" href="#"><img src="logo.png"></div>
-		<div class="logo2" href="#"><img src="logo2.png"></div>
-	</div>
-</div>
-		
+	<body bgcolor="black">
+    <br>
+	<p>P  O  R  T</p>
+	<div class="box1"><a href="main page.html"> Jukoyakki.</a> </div>
+	<div class="box2"></div>
+    <h1>F  O  L  I  O</h1>
 
 	</body>
